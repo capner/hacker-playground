@@ -1,7 +1,3 @@
-<?php
-include 'header_depan.php';
-
-?>
 
 <h1>ABOUT ME</h1>
 <pre>
