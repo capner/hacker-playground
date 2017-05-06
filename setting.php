@@ -4,7 +4,6 @@ error_reporting(0);
 session_start();
 
 
-//header("location:chat.php");
 
 
 //===========koneksi ke database============
@@ -13,10 +12,10 @@ session_start();
 
 
 $host = "localhost";
-$user = "ercashco_root"; 
+$user = ""; 
 
-$pass = "325417"; 
-$db = "ercashco_chat"; 
+$pass = ""; 
+$db = ""; 
 
 $konek = mysql_connect($host, $user, $pass) or die ('koneksi dengan database terputus! '); mysql_select_db($db);
 
@@ -26,114 +25,9 @@ $time = date("H:i");
 $fulltime = date("Y-m-d H:i:s");
 
 
-
-//=================================monitor visitor online=====================================
-
-/*
-$dataFile = "visitors.txt";
-
-$sessionTime = 1; //this is the time in **minutes** to consider someone online before removing them from our file
-
-//Please do not edit bellow this line
-
-//error_reporting(E_ERROR | E_PARSE);
-
-if(!file_exists($dataFile)) {
-	$fp = fopen($dataFile, "w+");
-	fclose($fp);
-}
-
-$ip = $_SERVER['REMOTE_ADDR'];
-$users = array();
-$onusers = array();
-
-//getting
-$fp = fopen($dataFile, "r");
-flock($fp, LOCK_SH);
-while(!feof($fp)) {
-	$users[] = rtrim(fgets($fp, 32));
-}
-flock($fp, LOCK_UN);
-fclose($fp);
-
-
-//cleaning
-$x = 0;
-$alreadyIn = FALSE;
-foreach($users as $key => $data) {
-	list( , $lastvisit) = explode("|", $data);
-	if(time() - $lastvisit >= $sessionTime * 60) {
-		$users[$x] = "";
-	} else {
-		if(strpos($data, $ip) !== FALSE) {
-			$alreadyIn = TRUE;
-			$users[$x] = "$ip|" . time(); //updating
-		}
-	}
-	$x++;
-}
-
-if($alreadyIn == FALSE) {
-	$users[] = "$ip|" . time();
-}
-
-//writing
-$fp = fopen($dataFile, "w+");
-flock($fp, LOCK_EX);
-$i = 0;
-foreach($users as $single) {
-	if($single != "") {
-		fwrite($fp, $single . "\r\n");
-		$i++;
-	}
-}
-flock($fp, LOCK_UN);
-fclose($fp);
-
-if($uo_keepquiet != TRUE) {
-	$online =  $i ;
-} ;
-
-*/
 //======================================enkripsi dekripsi data=================================
 
-/*
-//$input = "4000";
 
-
-//$encrypted = jatuh( $input );
-//$decrypted = cinta( $encrypted );
-//echo $encrypted . '<br />' . $decrypted;
-
-
-function jatuh( $q ) {
-    $cryptKey  = 'ds14sSDdhssE21dsd4';
-    $qEncoded      = base64_encode( mcrypt_encrypt( MCRYPT_RIJNDAEL_256, md5( $cryptKey ), $q, MCRYPT_MODE_CBC, md5( md5( $cryptKey ) ) ) );
-    return( $qEncoded );
-
-} ;
-
-
-
-function cinta( $q ) {
-    $cryptKey  = 'ds14sSDdhssE21dsd4';
-    $qDecoded      = rtrim( mcrypt_decrypt( MCRYPT_RIJNDAEL_256, md5( $cryptKey ), base64_decode( $q ), MCRYPT_MODE_CBC, md5( md5( $cryptKey ) ) ), "\0");
-    return( $qDecoded );
-
-} ;
-
-
-
-
-
-
-
-
-
-
-
-
-*/
 
 function tutup( $q ) {
 
