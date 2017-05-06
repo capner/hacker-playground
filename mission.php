@@ -82,8 +82,5 @@ while ($row=mysql_fetch_array($query)) {
 <br>
 <br>
 <br>
- <?php
-include"ads2.php"; 
-?>
 
 
