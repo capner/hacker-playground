@@ -1,5 +1,14 @@
 # hacker-playground
-platform for simple chat, forum, file sharing, riddle leaderboard, and many more
+platform for simple chat, forum, file sharing, riddle leaderboard, and many more.
+
+CURRENT FEATURE
+* chat
+* deface mirror
+* file sharing (just link share)
+* password (md5, base64, sha1 encrypt)
+* rank
+* riddle
+
 
 Welcome to the hacker-playground wiki!
 
