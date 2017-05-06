@@ -1,0 +1,97 @@
+
+body {
+
+
+	margin-top: 50px;
+
+  	margin-left: 5px;
+
+	margin-right: 5px;
+
+	background-color: black;
+	color: lightgrey ;
+
+
+}
+
+
+
+
+.borderless td, .borderless th {
+    border: none !important;
+    border-top: none !important; 
+	width: auto !important ;
+
+}
+
+
+
+input, textarea ,select {
+    background-color:black !important;
+    color: white !important;
+}
+
+#container {
+  overflow: hidden;
+      width: 100%;
+}
+
+#inbox{
+	
+	
+    outline: 1px solid white;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width:100%;
+	 white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+   white-space: pre-line;
+}
+
+
+
+#loadpage {
+	
+  
+  top: 50%;
+  left: 50%;
+	
+}
+
+#pas {
+   width: auto !important;
+}
+
+
+ul
+{
+list-style-type: none !important;
+}
+
+
+img.thumb{
+    width: 100px;
+}
+
+pre {
+	border: 0; 
+	background-color: transparent;
+	color: white ;
+	}
+
+#mirror-info {
+	
+	margin-top: 50px;
+
+  	margin-left: 10px;
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+    background-color:yellow ;
+}

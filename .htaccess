@@ -1,0 +1,14 @@
+RewriteEngine On
+
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https 
+#RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L] 
+
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+
+<FilesMatch "\.(jpg|jpeg|png|gif)$">
+Header set Expires "Thu, 15 Apr 3015 20:00:00 GMT"
+</FilesMatch>
+
+ErrorDocument 404 /404.php
