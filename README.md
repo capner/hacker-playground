@@ -16,7 +16,7 @@ Welcome to the hacker-playground wiki!
 this is the platform for simple chat, forum, file sharing and riddle leaderboard use simple php code. You can download the code and install it manually on your own web server.
 
 # Requirement
-webserver running apache and php 5.
+webserver running apache, mysql  and php 5 (php7 deprecated).
 
 # Install
 Just download the soce and upload to your public html, and import the database.sql
