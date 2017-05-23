@@ -42,4 +42,7 @@ core developer : X47 ;
 user experience : Mr. X ;
 security test : dewmonic, tobasec ;
 
+# Note
+
+this project is no longer being maintained
 
